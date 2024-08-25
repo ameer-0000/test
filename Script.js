@@ -1,16 +1,12 @@
-document.getElementById("colorOptions").addEventListener("change", function() {
-    const selectedOption = this.options[this.selectedIndex];
-    const selectedColor = selectedOption.value;
-    const selectedPrice = selectedOption.getAttribute("data-price");
-
-    // تغيير الصورة حسب اللون المختار
-    const productImage = document.getElementById("productImage");
-    productImage.src = selectedColor + "-dragon-controller.png";
-
-    // تحديث السعر
-    document.getElementById("productPrice").innerText = `$${selectedPrice}`;
-});
-
-document.getElementById("buyNowBtn").addEventListener("click", function() {
-    alert("تم إضافة المنتج إلى سلة التسوق!");
-});
+function changeColor(color) {
+    const productImage = document.getElementById('productImage');
+    if (color === 'blue') {
+        productImage.src = 'blue-dragon-controller.png';
+    } else if (color === 'red') {
+        productImage.src = 'red-dragon-controller.png';
+    } else if (color === 'green') {
+        productImage.src = 'green-dragon-controller.png';
+    } else if (color === 'black') {
+        productImage.src = 'black-dragon-controller.png';
+    }
+}
