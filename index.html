@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتج دراجون</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="productImage" src="blue-dragon-controller.png" alt="Bluish Dragon Controller">
+        </div>
+        <div class="product-info">
+            <h1>جهاز تحكم بلو دراجون</h1>
+            <p>السعر: <span id="productPrice">$59.99</span></p>
+            <label for="colorOptions">اختر اللون:</label>
+            <select id="colorOptions">
+                <option value="blue" data-price="59.99">أزرق</option>
+                <option value="red" data-price="62.99">أحمر</option>
+                <option value="green" data-price="64.99">أخضر</option>
+                <option value="black" data-price="59.99">أسود</option>
+            </select>
+            <button id="buyNowBtn">اشتري الآن</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
