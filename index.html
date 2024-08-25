@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منتج دراجون</title>
+    <title>Product Display</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="product-container">
+    <div class="container">
         <div class="product-image">
-            <img id="productImage" src="blue-dragon-controller.png" alt="Bluish Dragon Controller">
+            <img id="productImage" src="blue-dragon-controller.png" alt="Bluish Dragon DualShock 4 Wireless Controller">
         </div>
-        <div class="product-info">
-            <h1>جهاز تحكم بلو دراجون</h1>
-            <p>السعر: <span id="productPrice">$59.99</span></p>
-            <label for="colorOptions">اختر اللون:</label>
-            <select id="colorOptions">
-                <option value="blue" data-price="59.99">أزرق</option>
-                <option value="red" data-price="62.99">أحمر</option>
-                <option value="green" data-price="64.99">أخضر</option>
-                <option value="black" data-price="59.99">أسود</option>
-            </select>
-            <button id="buyNowBtn">اشتري الآن</button>
+        <div class="product-details">
+            <h1>Bluish Dragon DualShock 4 Wireless Controller</h1>
+            <p class="price">$59.99</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa consequatur, consequuntur, rem cumque ducimus aspernatur cupiditate molestias fugiat.</p>
+            <div class="colors">
+                <span class="color-circle blue" onclick="changeColor('blue')"></span>
+                <span class="color-circle red" onclick="changeColor('red')"></span>
+                <span class="color-circle green" onclick="changeColor('green')"></span>
+                <span class="color-circle black" onclick="changeColor('black')"></span>
+            </div>
+            <button class="buy-button">Buy Now</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
